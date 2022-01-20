@@ -1,0 +1,20 @@
+This directory contains matlab scripts used to generate figures for
+A Quantile Conserving Ensemble Filter Framework. Part I: Updating an Observed Variable
+by Jeffrey Anderson
+which was submitted to Monthly Weather Review.
+
+There are three classes of scripts:
+
+1. Quantile conserving filter increment scripts. These have names beginning with "obs_increment_" 
+and compute the increments for an input prior ensemble given parameters describing the likelihood
+for a variety of different continuous prior / likelihood pairs.
+
+2. Figure generation scripts. These have names "paper_fig#" and each generates
+one of the figures for the mansuscript.
+
+3. Utilities: 
+   a. norm_inv.m: Computes the inverse of the CDF (quantile function) for a standard normal.
+   b. get_cdf_gaussians.m: Computes the cdf for a distribution that is the sum of n normals with
+                           specified means and standard deviations.
+   c. cdf_search_gaussians.m: Computes the inverse of the CDF (quantile function) for a distribution
+                              that is the sum of n normals with specified means and standard deviations.
